@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: telegram-pdf-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python telegram_pdf_merge_bot.py
