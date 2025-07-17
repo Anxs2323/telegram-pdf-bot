@@ -3,7 +3,9 @@ from telegram import Update, Document
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 from PyPDF2 import PdfMerger
 
-TOKEN = "7784674088:AAESaz8pWgK4CpfnnUf0SAG7IztaAM5-zUw"
+import os
+TOKEN = os.getenv("7784674088:AAESaz8pWgK4CpfnnUf0SAG7IztaAM5-zUw")
+
 
 pdf_storage = {}
 
